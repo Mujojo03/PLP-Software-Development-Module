@@ -1,0 +1,127 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+  line-height: 1.6;
+  background: #fdfdfd;
+  color: #333;
+}
+
+header {
+  background: #111;
+  color: #fff;
+  padding: 1em 0;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 1em;
+}
+
+nav h1 {
+  font-size: 1.5rem;
+}
+
+nav ul {
+  display: flex;
+  gap: 1em;
+  list-style: none;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.hero {
+  text-align: center;
+  padding: 4em 1em;
+  background: #f4f4f4;
+}
+
+section {
+  max-width: 1000px;
+  margin: 2em auto;
+  padding: 1em;
+}
+
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.skills li {
+  background: #111;
+  color: #fff;
+  padding: 0.5em 1em;
+  border-radius: 5px;
+  list-style: none;
+}
+
+.project {
+  background: #eee;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-left: 4px solid #111;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 1em;
+  background: #111;
+  color: #fff;
+  padding: 0.5em 1.2em;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 0.7em;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  background: #111;
+  color: #fff;
+  border: none;
+  padding: 0.7em;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+footer {
+  text-align: center;
+  padding: 2em;
+  background: #111;
+  color: #fff;
+  margin-top: 2em;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .skills {
+    flex-direction: column;
+  }
+}
