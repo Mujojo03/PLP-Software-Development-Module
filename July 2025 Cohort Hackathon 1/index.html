@@ -1,88 +1,166 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Mujojo's Portfolio</title>
-  <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jane Rose Portfolio</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <!-- header section -->
+    <header role="banner">
+        <div class="container">
+            <nav role="navigation">
+                <h1 class="logo">Jane Rose</h1>
+                <input type="checkbox" id="nav-toggle" class="nav-toggle">
+                <label for="nav-toggle" class="menu-toggle" aria-label="Toggle navigation">☰</label>
+                <ul class="nav-menu">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#education">Education</a></li>
+                    <li><a href="#interests">Interests</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
-  <header>
-    <nav>
-      <h1>Mujojo</h1>
-      <ul>
-        <li><a href="#about">About</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#education">Education</a></li>
-        <li><a href="#interests">Interests</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
+    <!-- hero section -->
+    <section class="hero" role="main">
+        <div class="container">
+            <div class="content-wrapper">
+                <h2>Hi, I'm Jane Rose</h2>
+                <p>Developer | Tech and Bitcoin Enthusiast | Lifelong Learner</p>
+            </div>
+        </div>
+    </section>
 
-  <section class="hero">
-    <h2>Hi, I'm Mujojo</h2>
-    <p>Developer | Tech Enthusiast | Lifelong Learner</p>
-  </section>
+    <!-- about section -->
+    <section id="about">
+        <div class="container">
+            <div class="section-wrapper">
+                <h2>About Me</h2>
+                <div class="content-wrapper">
+                    <p>I am a passionate full-stack software developer with a strong foundation in modern web technologies. I
+                specialize in creating clean, efficient, and user-friendly applications that solve real-world problems.
+                My expertise spans across backend development with .NET and Python, frontend development with React and
+                Next.js, and database management. I am committed to writing clean code, following industry best
+                practices, and continuously learning new technologies to deliver exceptional digital solutions.</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-  <section id="about">
-    <h2>About Me</h2>
-    <p>I’m passionate about solving real-world problems through code. I thrive in collaborative environments and enjoy exploring the intersections of blockchain, software engineering, and innovation.</p>
-  </section>
+    <!-- skills section -->
+    <section id="skills">
+        <div class="container">
+            <div class="section-wrapper">
+                <h2>Programming Languages</h2>
+                <div class="content-wrapper">
+                    <ul class="skills">
+                        <li>Python</li>
+                        <li>C# / .NET</li>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>JavaScript</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
 
-  <section id="skills">
-    <h2>Programming Languages</h2>
-    <ul class="skills">
-      <li>Python</li>
-      <li>C# / .NET</li>
-      <li>HTML</li>
-      <li>CSS</li>
-      <li>JavaScript</li>
-      <li>SQL</li>
-      <li>Bash</li>
-    </ul>
-  </section>
+    <!-- education section -->
+    <section id="education">
+        <div class="container">
+            <div class="section-wrapper">
+                <h2>Education</h2>
+                <div class="content-wrapper">
+                    <p><strong>BSc in Computer Science - Ongoing</strong></p>
+                    <p>Focusing on software engineering, data structures, algorithms, and modern development practices. Exploring advanced topics in cybersecurity and blockchain.</p>
+                    <a href="assets/CV.pdf" download class="btn">Download CV</a>
+                </div>
+            </div>
+        </div>
+    </section>
 
-  <section id="education">
-    <h2>Education</h2>
-    <p>BSc in Computer Science - Ongoing</p>
-    <a href="assets/cv.pdf" download class="btn">Download CV</a>
-  </section>
+    <!-- interests section -->
+    <section id="interests">
+        <div class="container">
+            <div class="section-wrapper">
+                <h2>Interests</h2>
+                <div class="content-wrapper">
+                    <p>I'm excited about Bitcoin, cybersecurity, backend systems, and ethical hacking. I enjoy tinkering with low-level systems and building scalable products. My curiosity extends to AI, machine learning, and distributed systems.</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-  <section id="interests">
-    <h2>Interests</h2>
-    <p>I'm particularly excited about Bitcoin, cybersecurity, backend systems, and ethical hacking. I enjoy tinkering with low-level systems and building products that scale and serve.</p>
-  </section>
+    <!-- projects section -->
+    <section id="projects">
+        <div class="container">
+            <div class="section-wrapper">
+                <h2>Projects</h2>
+                <div class="content-wrapper">
+                    <div class="project-wrapper">
+                        <div class="project">
+                            <h3>Expence Tracker</h3>
+                            <p>A personal finance management tool to track expenses and income.</p>
+                            <a href="https://github.com/Mujojo03/ExpenseTracker" target="_blank" class="btn">View Project</a>
+                        </div>
+                    </div>
+                    <div class="project-wrapper">
+                        <div class="project">
+                            <h3>Health AppointmentSystem - Link Med</h3>
+                            <p>A .NET API for patients to book appointments and doctors to manage requests. Includes reminders, calendar integration, and GDPR-compliant data handling.</p>
+                            <a href="https://github.com/yourusername/health-app" target="_blank" class="btn">View Project</a>
+                        </div>
+                    </div>
+                    <div class="project-wrapper">
+                        <div class="project">
+                            <h3>SatSoko</h3>
+                            <p>A Bitcoin Lightning Network marketplace for seamless transactions.</p>
+                            <a href="https://github.com/Mujojo03/BitMarket" target="_blank" class="btn">View Project</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-  <section id="projects">
-    <h2>Projects</h2>
-    <div class="project">
-      <h3>Bitcoin Wallet App</h3>
-      <p>A lightweight wallet that lets users send and receive BTC on testnet.</p>
-      <a href="https://github.com/yourusername/btc-wallet" target="_blank">View Project</a>
-    </div>
-    <div class="project">
-      <h3>Health Appointment System</h3>
-      <p>.NET API allowing patients to book appointments and doctors to manage requests.</p>
-      <a href="https://github.com/yourusername/health-app" target="_blank">View Project</a>
-    </div>
-  </section>
+    <!-- contact section -->
+    <section id="contact">
+        <div class="container">
+            <div class="section-wrapper">
+                <h2>Contact Me</h2>
+                <div class="content-wrapper">
+                    <p>Let's connect! Reach out for project ideas, collaborations, or tech discussions.</p>
+                    <div class="form-wrapper">
+                        <form action="#" method="POST">
+                            <div class="form-group">
+                                <input type="text" name="name" placeholder="Your Name" required aria-label="Name">
+                            </div>
+                            <div class="form-group">
+                                <input type="email" name="email" placeholder="Your Email" required aria-label="Email">
+                            </div>
+                            <div class="form-group">
+                                <textarea name="message" placeholder="Your Message" rows="5" required aria-label="Message"></textarea>
+                            </div>
+                            <div class="form-group">
+                                <button type="submit">Send Message</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-  <section id="contact">
-    <h2>Contact Me</h2>
-    <form>
-      <input type="text" placeholder="Your Name" required />
-      <input type="email" placeholder="Your Email" required />
-      <textarea placeholder="Your Message" rows="5" required></textarea>
-      <button type="submit">Send</button>
-    </form>
-  </section>
-
-  <footer>
-    <p>&copy; 2025 Mujojo. All rights reserved.</p>
-  </footer>
-
+    <!-- footer -->
+    <footer role="contentinfo">
+        <div class="container">
+            <p>&copy; 2025 Jane Rose. Built with passion for clean, accessible design.</p>
+        </div>
+    </footer>
 </body>
 </html>
